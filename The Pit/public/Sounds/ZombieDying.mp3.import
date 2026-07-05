@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ceror4ay6jvd1"
+path="res://.godot/imported/ZombieDying.mp3-469e5b9d9ea73a8536d2682edc42f8a4.mp3str"
+
+[deps]
+
+source_file="res://Games/The Pit/public/Sounds/ZombieDying.mp3"
+dest_files=["res://.godot/imported/ZombieDying.mp3-469e5b9d9ea73a8536d2682edc42f8a4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

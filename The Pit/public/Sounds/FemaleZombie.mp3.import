@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkpo3x5wtjrjw"
+path="res://.godot/imported/FemaleZombie.mp3-665c7e0d9c291041cf0bcfa86963a5bd.mp3str"
+
+[deps]
+
+source_file="res://Games/The Pit/public/Sounds/FemaleZombie.mp3"
+dest_files=["res://.godot/imported/FemaleZombie.mp3-665c7e0d9c291041cf0bcfa86963a5bd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

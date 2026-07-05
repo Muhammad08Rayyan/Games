@@ -1,0 +1,78 @@
+[gd_scene load_steps=5 format=3 uid="uid://mainscene"]
+
+[ext_resource type="Texture2D" path="res://assets/sand_pit.png" id="1_bg"]
+[ext_resource type="Script" path="res://scripts/GameManager.gd" id="2_gm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_n"]
+bg_color = Color(0.8, 0.1, 0.1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btn_h"]
+bg_color = Color(1, 0.3, 0.3, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" type="TextureRect" parent="."]
+offset_left = -500.0
+offset_top = -500.0
+offset_right = 2500.0
+offset_bottom = 1500.0
+texture = ExtResource("1_bg")
+expand_mode = 1
+stretch_mode = 0
+mouse_filter = 2
+
+[node name="Units" type="Node2D" parent="."]
+y_sort_enabled = true
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("2_gm")
+
+[node name="BattleUI" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="BattleUI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="BattleUI/Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -200.0
+offset_top = -150.0
+offset_right = 200.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/margin_bottom = 50
+
+[node name="FightButton" type="Button" parent="BattleUI/Control/MarginContainer"]
+visible = false
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/hover = SubResource("StyleBoxFlat_btn_h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn_n")
+text = "START BATTLE"
+
+[node name="ExitButton" type="Button" parent="BattleUI/Control/MarginContainer"]
+visible = false
+custom_minimum_size = Vector2(400, 100)
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+theme_override_styles/hover = SubResource("StyleBoxFlat_btn_h")
+theme_override_styles/normal = SubResource("StyleBoxFlat_btn_n")
+text = "MAIN MENU"

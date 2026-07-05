@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbhc72vtnbkh0"
+path="res://.godot/imported/ZombieScreech.mp3-881bc3194ca7e5e859ad67a7a354ed5c.mp3str"
+
+[deps]
+
+source_file="res://Games/The Pit/public/Sounds/ZombieScreech.mp3"
+dest_files=["res://.godot/imported/ZombieScreech.mp3-881bc3194ca7e5e859ad67a7a354ed5c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
