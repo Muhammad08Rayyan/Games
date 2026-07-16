@@ -1,0 +1,49 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Game"
+run/main_scene="res://Scenes/MainMenu/Login.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+run/can_sleep_unfocused=false
+
+[autoload]
+
+Supabase="*uid://b2b1fo8jimoeu"
+Global="*res://Scripts/Global.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/mode=2
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_mcp/plugin.cfg", "res://addons/supabase/plugin.cfg")
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+
+[supabase]
+
+config/supabase_url="https://nibnmzjxjuciocgchggs.supabase.co"
+config/supabase_key="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5pYm5temp4anVjaW9jZ2NoZ2dzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODMyMzE4MzAsImV4cCI6MjA5ODgwNzgzMH0.MouCruMwl4Zz5LNLi5EiKhsKOpegjfo4L5objGro4R8"
